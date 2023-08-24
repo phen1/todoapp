@@ -36,11 +36,11 @@ function NewTodo() {
               icon: '✅'
             })
             //@ts-ignore
-            titleRef?.current?.value = '';
+            task.title = '';
             //@ts-ignore
-            descriptionRef?.current?.value = '';
+            task.description = '';
             //@ts-ignore
-            dueOnRef?.current?.value = '';
+            task.dueAt = new Date('');
           }
         )
     }else {
